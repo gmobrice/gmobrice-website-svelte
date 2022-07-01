@@ -1,13 +1,12 @@
 import { render } from '@testing-library/svelte';
-import { expect, test } from '@playwright/test';
 import { navigationLinks } from '../data';
 import Nav from '../Nav.svelte';
 
-// TODO: configure tests
+describe('Nav component Unit Tests', () => {
+	it('should render and validate elements', async () => {
+		const { findByText } = render(Nav);
+		const linkElement = await findByText(navigationLinks[0].name);
 
-// test('It should render Nav and validate links', () => {
-// const { findByDisplayValue, getByDisplayValue } = render(Nav);
-// navigationLinks.forEach(({ name, href }) => {
-//   //
-// });
-// });
+		expect(linkElement).toBeTruthy();
+	});
+});
