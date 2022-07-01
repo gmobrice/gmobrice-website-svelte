@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+#main-content {
+	width: 1152px;
+	align-self: center;
+	justify-self: center;
+}

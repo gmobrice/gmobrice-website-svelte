@@ -3,12 +3,12 @@
 </script>
 
 <svelte:head>
-	<title>Gustavo Mobrice</title>
-	<meta name="description" content="Welcome to my portfolio website!" />
+	<title>Contact</title>
+	<meta name="description" content="Contact me!" />
 </svelte:head>
 
 <section>
-	<h1>Home</h1>
+	<h1>Contact</h1>
 </section>
 
 <style lang="scss">

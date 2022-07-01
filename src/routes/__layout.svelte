@@ -1,11 +1,15 @@
 <script lang="ts">
+	import '../app.scss';
 	import Header from '$lib/header/Header.svelte';
 </script>
 
-<Header />
+<div>
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
+</div>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
