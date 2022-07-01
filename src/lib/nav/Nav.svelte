@@ -1,23 +1,10 @@
 <script lang="ts">
-	const links = [
-		{
-			name: 'Home',
-			href: '/'
-		},
-		{
-			name: 'About',
-			href: '/about'
-		},
-		{
-			name: 'Contact',
-			href: '/contact'
-		}
-	];
+	import { navigationLinks } from './data';
 </script>
 
 <nav>
 	<ul class="flex space-x-6">
-		{#each links as { name, href } (name)}
+		{#each navigationLinks as { id, name, href } (id)}
 			<li class="list-none">
 				<a {href} class="text-gray-500 hover:text-blue-500 hover:underline">
 					{name}
