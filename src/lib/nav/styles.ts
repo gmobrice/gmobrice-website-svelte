@@ -1,4 +1,4 @@
-export const getLinkStyle = (isSmallerSize: boolean, active: string, current: string) => `
+export const getLinkStyles = (isSmallerSize: boolean, active: string, current: string) => `
   text-slate-50
   duration-100
   hover:text-sky-300
@@ -7,7 +7,7 @@ export const getLinkStyle = (isSmallerSize: boolean, active: string, current: st
   ${active === current ? 'font-semibold text-sky-400 hover:text-sky-400' : ''}
 `;
 
-export const getButtonStyle = (isSmallerSize: boolean) => `
+export const getButtonStyles = (isSmallerSize: boolean) => `
   rounded-full 
   bg-rose-500 
   text-slate-50 
