@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<h1>Contact</h1>
+	<h1 class="text-5xl">Contact</h1>
 </section>
 
 <style lang="scss">

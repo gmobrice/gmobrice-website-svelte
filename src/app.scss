@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Source+Sans+Pro:wght@400;600&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	@apply bg-slate-50;
 }
 
-h1 {
-	font-size: 32px;
-}
-
-#main-content {
-	width: 1152px;
-	align-self: center;
-	justify-self: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Gentium Book Plus', serif;
 }
