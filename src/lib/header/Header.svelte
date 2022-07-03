@@ -15,6 +15,9 @@
 	let isSmallerSize = false;
 	let scrollPosition = 0;
 
+	//props
+	export let activePath: string;
+
 	beforeUpdate(() => {
 		isSmallerSize = scrollPosition >= scrollThreshold;
 	});
@@ -34,7 +37,7 @@
 					</span>
 				</span>
 			</a>
-			<Nav isSmallerNav={isSmallerSize} />
+			<Nav {activePath} isSmallerNav={isSmallerSize} />
 		</div>
 	</div>
 </header>

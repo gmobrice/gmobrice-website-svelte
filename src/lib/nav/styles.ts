@@ -5,7 +5,7 @@ export const getLinkStyles = (isSmallerSize: boolean, active: string, current: s
   hover:ease-in
   ${isSmallerSize ? 'text-sm' : 'text-md'}
   ${active === current ? 'font-semibold text-sky-400 hover:text-sky-400' : ''}
-`;
+  `;
 
 export const getButtonStyles = (isSmallerSize: boolean) => `
   rounded-full 

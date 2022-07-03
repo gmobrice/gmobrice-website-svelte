@@ -1,4 +1,4 @@
-import type { NavigationLink } from './types';
+import type { NavigationLink } from '$lib/types';
 
 export const navigationLinks: Array<NavigationLink> = [
 	{

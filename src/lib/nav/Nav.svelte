@@ -1,18 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { beforeUpdate } from 'svelte';
 	import { navigationLinks } from './data';
 	import { getLinkStyles, getButtonStyles } from './styles';
 
 	// props
 	export let isSmallerNav: boolean;
-
-	// state
-	let activePath = $page.url.pathname;
-
-	beforeUpdate(() => {
-		activePath = $page.url.pathname;
-	});
+	export let activePath: string;
 </script>
 
 <nav>
